@@ -1,0 +1,21 @@
+#carde{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+#card{
+    display: grid;
+    margin-bottom: 10px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+ion-card{
+     max-height: 252px;
+    border-radius: 15px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
