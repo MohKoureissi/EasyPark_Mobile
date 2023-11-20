@@ -1,0 +1,60 @@
+img{
+    max-width: 70%;
+    margin-left: 12%;
+    margin-top: 8%;
+}
+#container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    margin-bottom: 10px !important;
+    height: 30vh;
+
+}
+.h3{
+    align-items: center;
+    color: #005B2F;
+    margin-top: auto;
+
+}
+#carde{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+.csss{
+  //  font-size:  156%;
+     text-align: center;
+      font-weight: bold;
+       color: #005B2F;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden; /* Masque le texte qui dépasse du conteneur */
+  text-overflow: ellipsis; /* Ajoute des points de suspension (...) lorsque le texte est masqué */
+  font-size: 6vw; /* Utilise une taille de police relative à la largeur de la fenêtre */
+  max-width: 100%; /* Empêche le texte de dépasser la largeur du conteneur parent */
+
+}
+#card{
+    display: grid;
+    margin-bottom: 30px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+#img{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+}
+.logoimg{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    height: 70%;
+}
+.footer{
+    display: flex;
+}

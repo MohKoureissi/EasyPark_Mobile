@@ -1,0 +1,56 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputGroup{
+    margin-top: 20px;
+}
+.icon{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    width: 76px;
+    background-color: #308D89;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+input{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    background-color: #D9D9D9;
+}
+input ::placeholder{
+    margin-left: 50px;
+}
+button{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 40px;
+    width: 275px;
+    border: none;
+    color: white;
+    background-color: #308D89;
+    font-size: larger;
+}
+.bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.eme-btn{
+    width: 170px;
+    height: 60px;
+    margin: auto;
+    background-color:white;
+    border: 3px solid #308D89;
+    color: #308D89;
+}

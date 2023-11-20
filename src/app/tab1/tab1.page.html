@@ -1,17 +1,50 @@
+<!-- <ion-content [fullscreen]="true">
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      home
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+     
+      <img src="../../assets/img/mon-logo.png" alt="no image">
     </ion-toolbar>
+    <div id="carde" class="animate__animated  animate__bounce">
+   
+      <ion-card style="border-radius: 25px;" >
+        <p>momo</p>
+        <div class="logoimg"><img alt="Silhouette of mountains"  [routerLink]="['./horaire']"  src="../../assets/images/horaire.png" /></div>
+        <ion-card-header [routerLink]="['./horaire']" >
+          <ion-card-title class="csss">Horaire</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <!---->
+      <ion-card style="border-radius: 25px;">
+        <div class="logoimg" style="background-color: #fff;"><img [routerLink]="['./annonce-liste']" alt="Silhouette of mountains" src="../../assets/annonce.png" /></div>
+        <ion-card-header  [routerLink]="['./annonce-liste']">
+          <ion-card-title  class="csss">Annonce</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <!---->
+      <!---->
+      <ion-card style="border-radius: 25px;">
+        <div class="logoimg" style="background-color: #fff;"><img style="margin-top: 0;" [routerLink]="['./programme-liste']" alt="Silhouette of mountains" src="../../assets/images/programme.png" /></div>
+        <ion-card-header [routerLink]="['./programme-liste']">
+          <ion-card-title  class="csss" >Programme</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <!---->
+      <ion-card style="border-radius: 25px;" >
+        <div class="logoimg"><img alt="Silhouette of mountains"  [routerLink]="['./details-document']"  src="../../../assets/images/document.png" /></div>
+        <ion-card-header [routerLink]="['./details-document']">
+          <ion-card-title  class="csss">Audios</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+  
+    </div>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
