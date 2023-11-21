@@ -1,6 +1,6 @@
 <div class="Container">
   <div class="heade" style="display: flex; align-items: center; justify-content: center; background-color:#308D89 ;height: 70px;">
-    <div class="ion"> <ion-icon name="arrow-back-sharp" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -83px;"></ion-icon></div>  
+    <div class="ion"> <ion-icon name="arrow-back-sharp"  [routerLink]="['../']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -83px;"></ion-icon></div>  
     <div>
       <h2 style="color: white; font-weight: bold;"> Parking su Sahel</h2>
     </div>
@@ -15,7 +15,7 @@
 
 <div  id="carde" class="animate__animated  animate__bounce" style="margin-top: 10px;">
   <!-- 1ere photo -->
-  <ion-card >
+  <ion-card   [routerLink]="['./detail-voiture']">
     <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/Lux.png" />
    <ion-card-content style="background-color: #F6F7F9; height: 100%;">
      <h1 class="marque"> Mercedes AMG</h1><h1 class="montant">1230000 FCFA</h1>

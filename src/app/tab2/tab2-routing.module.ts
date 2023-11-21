@@ -10,11 +10,11 @@ const routes: Routes = [
     component: Tab2Page,
   },
   {
-    path: '',
+    path: 'detail-voiture',
     component: DetailVoitureComponent
   },
   {
-    path:'',
+    path:'vente',
     component: VenteComponent
   }
 ];

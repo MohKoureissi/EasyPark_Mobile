@@ -9,10 +9,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InscriptionPage } from './inscription/inscription.page';
 import { InscriptioncComponent } from './inscriptionc/inscriptionc.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent ],
-  imports: [BrowserModule,FormsModule,ReactiveFormsModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule,FormsModule,ReactiveFormsModule,HttpClientModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

@@ -10,14 +10,14 @@
   <div class="inputGroup" style="margin-top: 10px;">
     <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 30px;">
-       <div class="icon">icon</div>
-       <div class="texte"> <input type="text" placeholder="Email"></div>
+       <div class="icon"><ion-icon name="mail-open-sharp" style="color: white; width: 30px;height: 25px;"></ion-icon></div>
+       <div class="texte"> <input type="text" formControlName="email" placeholder="Email"  required></div>
       </div>
       <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 15px;">
-       <div class="icon">icon</div>
-       <div class="texte"> <input type="password" placeholder="Mot de Passe"></div>
+       <div class="icon"><ion-icon name="lock-closed-sharp" style="color: white; width: 30px;height: 25px;"></ion-icon></div>
+       <div class="texte"> <input type="password" formControlName="motdepasse" placeholder="Mot de Passe"  required></div>
       </div>
-      <div class="bouton">
+      <div class="bouton1">
         <button type="submit">Se connecter</button>
       </div>
     </form>
@@ -26,10 +26,7 @@
     <img src="../../assets/img/ou.png" style="max-width: 70%;" alt="ou">
   </div>
   <div class="foot" style="display: flex; justify-content: center; align-items: center; margin-top: 25px;">
-<!-- 
-    <button class="eme-btn">Se Connecter</button>
-    <button class="eme-btn">Continuer avec</button> -->
-    <h3>Vous n'avez pas de compte ?</h3><h3 style="color: #308D89;"  [routerLink]="['../inscription']"> S'inscrire</h3>
+    <h3>Vous n'avez pas de compte ?</h3><button id="inscrire" style="color: #308D89; background-color: white; border: none;"  [routerLink]="['../inscription']"> S'inscrire</button>
   </div>
     
  

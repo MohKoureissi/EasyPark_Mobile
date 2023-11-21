@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { IonicModule } from '@ionic/angular';
 
@@ -14,6 +16,7 @@ import { InscriptioncComponent } from '../inscriptionc/inscriptionc.component';
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpClientModule,
     InscriptionPageRoutingModule,
     ReactiveFormsModule
   ],

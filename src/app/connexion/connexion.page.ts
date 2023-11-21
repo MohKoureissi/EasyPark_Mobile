@@ -13,7 +13,7 @@ export class ConnexionPage  {
 
   loginForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private clientService: ClientService, private router: Router, private authService: AuthServiceService) {
+  constructor(private formBuilder: FormBuilder, private clientService: ClientService, private router: Router) {
     this.loginForm = this.formBuilder.group({
       email: ['', Validators.required],
       motdepasse: ['', Validators.required],
@@ -28,9 +28,8 @@ export class ConnexionPage  {
       this.clientService.login(login.email, login.motdepasse).subscribe(
         (response: any) => {
           const idClientCon = response.idClient; 
-          console.log("ID de l'admin est :", idClientCon)
-          localStorage.setItem('idAdminParking', idClientCon); // stockage de l'admin connecté dans la session
-          this.authService.setClientConnecte(response); 
+          // console.log("ID Client :", idClientCon)
+          localStorage.setItem('idClient', idClientCon); 
           console.log("Mise à jour confirmée", response.idClient)
           console.log("connexion établie", response);
           this.router.navigate(['../tabs/tab1']);

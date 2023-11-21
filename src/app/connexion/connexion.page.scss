@@ -42,7 +42,7 @@ button{
     background-color: #308D89;
     font-size: larger;
 }
-.bouton{
+.bouton1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,4 +56,13 @@ button{
     background-color:white;
     border: 3px solid #308D89;
     color: #308D89;
+}
+h3{
+    margin-left: 5%;
+    margin-top: -11px;
+}
+#inscrire{
+    margin-top: -6%;
+    width: 100px;
+    font-size: 22px;
 }
