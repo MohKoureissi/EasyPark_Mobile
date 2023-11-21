@@ -8,7 +8,7 @@
   </div>
   <h1 style="align-items: center; text-align: center;margin-bottom: 40px;">Connexion</h1>
   <div class="inputGroup" style="margin-top: 10px;">
-    <form action="">
+    <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 30px;">
        <div class="icon">icon</div>
        <div class="texte"> <input type="text" placeholder="Email"></div>

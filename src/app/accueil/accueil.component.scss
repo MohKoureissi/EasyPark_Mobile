@@ -47,6 +47,7 @@ img{
     justify-content: center;
     align-items: center;
     margin-bottom: auto;
+    max-height: 100%;
 }
 .logoimg{
     display: grid;
@@ -61,4 +62,11 @@ img{
 .cardIon{
     border-radius: 25px;
     background-color: #8FC1BF;
+}
+.imgcard{
+    height: 100%;
+    max-width: 85%;
+}
+.divcard{
+    height: 110px;
 }

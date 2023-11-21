@@ -16,8 +16,9 @@ export class AccueilComponent  implements OnInit {
 
   ngOnInit():void{
     this.slides=[
-      {slider: 'assets/hh.png'},
-      {slider: 'assets/hh'},
+      {slider: '../../assets/img/park-removebg-preview.png'},
+      {slider: '../../assets/img/park-removebg-preview.png'},
+      {slider: '../../assets/img/park-removebg-preview.png'},
     ];
     }
   }

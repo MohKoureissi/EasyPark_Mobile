@@ -1,0 +1,44 @@
+
+<div class="body">
+  <img src="../../assets/img/sign-up-page-1886582-1598253 1.png" height="210px" alt="inscription">
+</div>
+<h2 style="align-items: center; text-align: center;margin-bottom: 40px;">Inscrivez- vous</h2>
+<div class="inputGroup" style="margin-top: 10px;">
+<form  [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()" >
+  <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 20px;">
+   <div class="icon"><ion-icon name="person-sharp" style="color: white; width: 30px;height: 25px;"></ion-icon></div>
+   <div class="texte"> <input type="text"  formControlName="nom" placeholder="Nom"  required></div>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 20px;">
+   <div class="icon"><ion-icon name="person-circle-sharp" style="color: white; width: 30px;height: 25px;"></ion-icon></div>
+   <div class="texte"> <input type="text"  formControlName="prenom" placeholder="Prenom"  required></div>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 20px;">
+   <div class="icon"><ion-icon name="location-sharp" style="color: white; width: 30px;height: 25px;"></ion-icon></div>
+   <div class="texte"> <input type="text"  formControlName="adresse" placeholder="Adresse"  required></div>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 20px;">
+   <div class="icon"><ion-icon name="mail-open-sharp" style="color: white; width: 30px;height: 25px;"></ion-icon></div>
+   <div class="texte"> <input type="text"  formControlName="email" placeholder="Email"  required></div>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 15px;">
+   <div class="icon"><ion-icon name="lock-closed-sharp" style="color: white; width: 30px;height: 25px;"></ion-icon></div>
+   <div class="texte"> <input type="password"  formControlName="motdepasse" placeholder="Mot de Passe"  required></div>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 15px;">
+   <div class="icon"><ion-icon name="lock-closed-sharp" style="color: white; width: 30px;height: 25px;"></ion-icon></div>
+   <div class="texte"> <input type="password"  formControlName="confirmation" placeholder="Confirmer"  required></div>
+  </div>
+  <div class="bouton">
+    <button type="submit">Enregistrer</button>
+  </div>
+</form>
+</div>
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+<img src="../../assets/img/ou.png" style="max-width: 70%;" alt="ou">
+</div><h4 style="margin-left: 2%;">Vous avez déjà un compte?</h4>
+<div class="foot" style="display: flex; justify-content: center; align-items: center; margin-top: 25px;">
+<button class="eme-btn"  [routerLink]="['../connexion']">Se Connecter</button>
+<img src="../../assets/img/Group 35 (1).png" style="margin: auto;" alt="google">
+</div>
+

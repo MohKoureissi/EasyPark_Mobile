@@ -7,6 +7,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { VenteComponent } from '../vente/vente.component';
+import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { VenteComponent } from '../vente/vente.component';
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
   ],
-  declarations: [Tab2Page, VenteComponent]
+  declarations: [Tab2Page, VenteComponent, DetailVoitureComponent]
 })
 export class Tab2PageModule {}

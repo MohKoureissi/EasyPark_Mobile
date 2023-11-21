@@ -31,6 +31,10 @@ const routes: Routes = [
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
+      },
+      {
+        path:'connexion',
+        loadChildren: () => import('../connexion/connexion.module').then( m => m.ConnexionPageModule)
       }
     ]
   },
