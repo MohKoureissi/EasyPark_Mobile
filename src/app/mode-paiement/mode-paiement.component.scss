@@ -1,0 +1,63 @@
+.imgPaiement{
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mode{
+    margin-top: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mode2{
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inp{
+    width: 322px;
+height: 57px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #FFF;
+
+box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.20) inset;
+}
+input  ::placeholder{
+    margin-left: 10px;
+}
+.pay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background:  white;
+    --color: white;
+  }
+  button{
+    color: white;
+    font-size: xx-large;
+    width: 327px;
+height: 55px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #FF7900;
+margin-bottom: 10px;
+  }
+  .paypal{
+    background-color: #013186;
+  }

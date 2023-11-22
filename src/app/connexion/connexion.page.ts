@@ -32,7 +32,7 @@ export class ConnexionPage  {
           localStorage.setItem('idClient', idClientCon); 
           console.log("Mise à jour confirmée", response.idClient)
           console.log("connexion établie", response);
-          this.router.navigate(['../tabs/tab1']);
+          this.router.navigate(['../tabs']);
           this.loginForm.reset();
         },
         (error: any) => {

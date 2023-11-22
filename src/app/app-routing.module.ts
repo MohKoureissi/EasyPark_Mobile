@@ -3,10 +3,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ConnexionPage } from './connexion/connexion.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component : ConnexionPage
-  },
+  // {
+  //   path: '',
+  //   component : ConnexionPage
+  // },
   {
     path:'',
     loadChildren:() => import('./tabs/tabs.module').then( m => m.TabsPageModule)
@@ -18,8 +18,8 @@ const routes: Routes = [
   {
     path: 'connexion',
     loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
-  }
- 
+  },
+
  
 ];
 @NgModule({

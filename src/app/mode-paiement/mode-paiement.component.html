@@ -1,0 +1,94 @@
+<div class="container">
+  <div class="heade" style="display: flex; align-items: center; justify-content: center; background-color:#308D89 ;height: 70px;">
+    <div class="ion"> <ion-icon name="arrow-back-sharp" [routerLink]="['../detail-voiture']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -83px;"></ion-icon></div>  
+    <div>
+      <h2 style="color: white; font-weight: bold;"> Mode Paiement</h2>
+    </div>
+  </div>
+  <div class="imgPaiement">
+    <img src="../../assets/img/paiement-removebg-preview.png" alt="paiement">
+  </div>
+  <div class="mode">
+    <img id="open-modal2" expand="block" src="../../assets/img/Group 76.svg" alt="paupal">
+  </div>
+  <div class="mode2">
+    <img   id="open-modal" expand="block" src="../../assets/img/Group 77.svg" alt="orange">
+  </div>
+
+
+
+<!-- Orange Money -->
+  <ion-content class="ion-padding">
+    <ion-modal #modal trigger="open-modal">
+      <ng-template>
+        <ion-content>
+          <div style="display: flex; align-items: end; justify-content: end;">
+            <ion-buttons slot="end">
+              <ion-button color="black" style="color: black;" (click)="modal.dismiss()">Close</ion-button>
+            </ion-buttons>
+          </div>
+          <div class="pay">
+            <img src="../../assets/img/Group 119.svg" height="210px" alt="pay">
+          </div>
+          <h2 style="text-align: center;">Entrer vôtre numéro</h2>
+          <div  style="display: flex; align-items: center; justify-content: center;">
+             <input class="inp" type="text" placeholder="Ex: 76542233">
+          </div>
+          <h2 style="text-align: center;">Entrer vôtre Code secret</h2>
+          <div  style="display: flex; align-items: center; justify-content: center;margin-bottom: 10px;">
+             <input class="inp" type="text" placeholder="Ex: 0000">
+          </div>
+          <div class="boutton" style="display: flex; align-items: center; justify-content: center;">
+            <button  id="open-modal3" expand="block"> <ion-icon style="color: white;" name="cash-outline"></ion-icon> Payer</button>
+          </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-content>
+  <!-- PayPal -->
+  <ion-content class="ion-padding">
+    <ion-modal #modal trigger="open-modal2">
+      <ng-template>
+        <ion-content>
+          <div style="display: flex; align-items: end; justify-content: end;">
+            <ion-buttons slot="end">
+              <ion-button color="black" style="color: black;" (click)="modal.dismiss()">Close</ion-button>
+            </ion-buttons>
+          </div>
+          <div class="pay">
+            <img src="../../assets/img/Group 120.svg" height="210px" alt="pay">
+          </div>
+          <h2 style="text-align: center;">Entrer vôtre numéro</h2>
+          <div  style="display: flex; align-items: center; justify-content: center;">
+             <input class="inp" type="text" placeholder="Ex: 76542233">
+          </div>
+          <h2 style="text-align: center;">Entrer vôtre Code secret</h2>
+          <div  style="display: flex; align-items: center; justify-content: center;margin-bottom: 10px;">
+             <input class="inp" type="text" placeholder="Ex: 0000">
+          </div>
+          <div class="boutton" style="display: flex; align-items: center; justify-content: center;">
+            <button class="paypal"> <ion-icon style="color: white;" name="cash-outline"></ion-icon> Payer</button>
+          </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-content>
+  <!-- Confirmation -->
+  <ion-content class="ion-padding">
+    <ion-modal #modal trigger="open-modal3">
+      <ng-template>
+        <ion-content>
+          <div style="display: flex; align-items: end; justify-content: end;">
+            <ion-buttons slot="end">
+              <ion-button color="black" style="color: black;" (click)="modal.dismiss()">Close</ion-button>
+            </ion-buttons>
+          </div>
+          <div class="boutton" style="display: flex; align-items: center; justify-content: center;">
+            <h2>Vôtre Paiement a été pris en compte! Vous aurez un message de confirmation dans les prochaines minutes. </h2>
+          </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-content>
+</div>
+

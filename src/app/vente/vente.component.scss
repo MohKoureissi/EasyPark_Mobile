@@ -11,7 +11,7 @@
     margin-right: 10px !important;
 }
 ion-card{
-     max-height: 252px;
+     height: 261px;
     border-radius: 15px;
 }
 .slider{
@@ -21,4 +21,18 @@ ion-card{
 }
 .marque{
     font-weight: bold;
+}
+.achat{
+    width: 105%;
+    margin-left: -4px;
+     border: none;
+     background-color:#E0E0E0 ;
+     border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+h1{
+    font-size: 1.4rem;
 }
