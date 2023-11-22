@@ -9,6 +9,7 @@ import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { VenteComponent } from '../vente/vente.component';
 import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.component';
 import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component';
+import { DetailsLocationComponent } from '../details-location/details-location.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component'
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
   ],
-  declarations: [Tab2Page, VenteComponent, DetailVoitureComponent, ModePaiementComponent]
+  declarations: [Tab2Page, VenteComponent, DetailVoitureComponent, ModePaiementComponent, DetailsLocationComponent]
 })
 export class Tab2PageModule {}

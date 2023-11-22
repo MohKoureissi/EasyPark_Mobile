@@ -1,0 +1,39 @@
+button{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 50px;
+    width: 95%;
+    border: none;
+    color: white;
+    background-color: #11B10E;
+    font-size: xx-large;
+}
+.bouton1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+h1{
+    margin-top: 1px;
+    font-family: Inter;
+    font-size: xx-large;
+}
+input{
+    width: 350px;
+    border: none;
+height: 57px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #FFF;
+box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.30) inset;
+
+}
+.duree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
