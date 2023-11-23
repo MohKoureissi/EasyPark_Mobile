@@ -1,0 +1,27 @@
+.transac{
+    display: flex;
+    margin-bottom: 20px;
+}
+.container{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.voiture{
+    width: 35%;
+}
+.prix{
+    margin-left: auto;
+}
+.marque{
+    color: black;
+    font-weight: 500;
+}
+.depense{
+    display: flex;
+    width: max-content;
+
+}
+.depenses{
+    display: flex;
+    margin-top: 5%;
+}

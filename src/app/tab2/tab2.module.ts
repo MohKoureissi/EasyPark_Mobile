@@ -10,6 +10,7 @@ import { VenteComponent } from '../vente/vente.component';
 import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.component';
 import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component';
 import { DetailsLocationComponent } from '../details-location/details-location.component';
+import { ModePaiementLocationComponent } from '../mode-paiement-location/mode-paiement-location.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,8 @@ import { DetailsLocationComponent } from '../details-location/details-location.c
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
   ],
-  declarations: [Tab2Page, VenteComponent, DetailVoitureComponent, ModePaiementComponent, DetailsLocationComponent]
+  declarations: [Tab2Page, VenteComponent,
+     DetailVoitureComponent, ModePaiementComponent,
+      DetailsLocationComponent,ModePaiementLocationComponent]
 })
 export class Tab2PageModule {}

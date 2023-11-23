@@ -5,6 +5,7 @@ import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.compone
 import { VenteComponent } from '../vente/vente.component';
 import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component';
 import { DetailsLocationComponent } from '../details-location/details-location.component';
+import { ModePaiementLocationComponent } from '../mode-paiement-location/mode-paiement-location.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path:'mode-paiement',
     component:ModePaiementComponent
+  },
+  {
+    path:'mode-paiement-location',
+    component:ModePaiementLocationComponent
   },
   {
     path:'details-location',

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="heade" style="display: flex; align-items: center; justify-content: center; background-color:#308D89 ;height: 59px;">
-    <div class="ion"> <ion-icon name="arrow-back-sharp" [routerLink]="['../detail-voiture']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -83px;"></ion-icon></div>  
+    <div class="ion"> <ion-icon name="arrow-back-sharp" [routerLink]="['../details-location']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -83px;"></ion-icon></div>  
     <div>
       <h2 style="color: white; font-weight: bold;"> Mode Paiement</h2>
     </div>
@@ -9,17 +9,17 @@
     <img src="../../assets/img/paiement-removebg-preview.png" alt="paiement">
   </div>
   <div class="mode">
-    <img id="open-modal2" expand="block" src="../../assets/img/Group 76.svg" alt="paupal">
+    <img id="open-modalLocation2" expand="block" src="../../assets/img/Group 76.svg" alt="paupal">
   </div>
   <div class="mode2">
-    <img   id="open-modal" expand="block" src="../../assets/img/Group 77.svg" alt="orange">
+    <img   id="open-modalLocation" expand="block" src="../../assets/img/Group 77.svg" alt="orange">
   </div>
 
 
 
 <!-- Orange Money -->
   <ion-content class="ion-padding">
-    <ion-modal #modal trigger="open-modal">
+    <ion-modal #modal trigger="open-modalLocation">
       <ng-template>
         <ion-content>
           <div style="display: flex; align-items: end; justify-content: end;">
@@ -47,27 +47,27 @@
   </ion-content>
   <!-- PayPal -->
   <ion-content class="ion-padding">
-    <ion-modal #modal trigger="open-modal2">
+    <ion-modal #modal trigger="open-modalLocation2">
       <ng-template>
         <ion-content>
           <div style="display: flex; align-items: end; justify-content: end;">
             <ion-buttons slot="end">
-              <ion-button color="black" style="color: black;" (click)="modal.dismiss()">Close</ion-button>
+              <ion-button color="black" style="color: black;" ></ion-button>
             </ion-buttons>
           </div>
           <div class="pay">
             <img src="../../assets/img/Group 120.svg" height="210px" alt="pay">
           </div>
-          <h2 style="text-align: center;">Entrer vôtre numéro</h2>
+          <h2 style="text-align: center;">Entrer vôtre email PayPal</h2>
           <div  style="display: flex; align-items: center; justify-content: center;">
-             <input class="inp" type="text" placeholder="Ex: 76542233">
+             <input class="inp" type="text" placeholder="Ex: monpaypal@gmail.com">
           </div>
           <h2 style="text-align: center;">Entrer vôtre Code secret</h2>
           <div  style="display: flex; align-items: center; justify-content: center;margin-bottom: 10px;">
-             <input class="inp" type="text" placeholder="Ex: 0000">
+             <input class="inp" type="text" placeholder="Ex: 7474"  style="margin-left: 20px;">
           </div>
           <div class="boutton" style="display: flex; align-items: center; justify-content: center;">
-            <button class="paypal"> <ion-icon style="color: white;" name="cash-outline"></ion-icon> Payer</button>
+            <button class="paypal" (click)="modal.dismiss()"> <ion-icon style="color: white;" name="cash-outline"></ion-icon> Payer</button>
           </div>
         </ion-content>
       </ng-template>
