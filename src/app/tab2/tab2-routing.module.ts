@@ -6,6 +6,7 @@ import { VenteComponent } from '../vente/vente.component';
 import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component';
 import { DetailsLocationComponent } from '../details-location/details-location.component';
 import { ModePaiementLocationComponent } from '../mode-paiement-location/mode-paiement-location.component';
+import { DetailParkingComponent } from '../detail-parking/detail-parking.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path:'details-location',
     component:DetailsLocationComponent
+  },
+  {
+    path: 'detail-parking',
+    component: DetailParkingComponent
   }
 
 ];
