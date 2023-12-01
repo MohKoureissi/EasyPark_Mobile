@@ -1,6 +1,6 @@
 <div class="Container">
   <div class="heade" style="display: flex; align-items: center; justify-content: center; background-color:#308D89 ;height: 59px;">
-    <div class="ion"> <ion-icon name="arrow-back-sharp"  [routerLink]="['../']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -63px;"></ion-icon></div>  
+    <div class="ion"> <ion-icon name="arrow-back-sharp"  [routerLink]="['./tab1']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -63px;"></ion-icon></div>  
     <div>
       <h2 style="color: white; font-weight: bold;"  [routerLink]="['./detail-parking']"> Parking su Sahel</h2>
     </div>
@@ -14,10 +14,12 @@
 
 <div  id="carde" class="animate__animated  animate__bounce" style="margin-top: 14px;">
   <!-- 1ere photo -->
-  <ion-card   [routerLink]="['./detail-voiture']">
-    <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/Lux.png" />
+  <ion-card   [routerLink]="['./detail-voiture']" *ngFor="for let voitures of voiture" >
+    <img [src]="voitures.photo2" class="card-img-top" alt="..." style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;">
+
+    <!-- <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/Lux.png" /> -->
    <ion-card-content style="background-color: #F6F7F9; height: 100%;">
-     <h1 class="marque"> Mercedes <br> AMG</h1><h1 class="montant">1230000 F</h1>
+     <h1 class="marque"> {{voitures.marque}} <br> AMG</h1><h1 class="montant">{{voitures.prix}}</h1>
      <div class="achat">
        <h1 style="font-size: 21px;margin-left: -10px;">Acheter</h1>
        <img src="../../assets/img/Vector.svg" height="23px" style="margin-left: 8px;" alt="">
@@ -26,7 +28,7 @@
   </ion-card>
 
   <!-- 2eme photo -->
-  <ion-card   [routerLink]="['./details-location']">
+  <!-- <ion-card   [routerLink]="['./details-location']">
     <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/bmw-removebg-preview.png" />
    <ion-card-content style="background-color: #F6F7F9; height: 100%;">
      <h1  class="marque"> Toyota <br> CHR</h1><h1 class="montant">2170000 F</h1>
@@ -35,10 +37,10 @@
       <img src="../../assets/img/Vector (1).svg" height="23px" style="margin-left: 8px;" alt="">
    </div>
     </ion-card-content> 
-  </ion-card>
+  </ion-card> -->
   <!-- 3eme photo -->
 
-  <ion-card>
+  <!-- <ion-card>
     <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/isuzu.png" />
    <ion-card-content style="background-color: #F6F7F9; height: 100%;">
      <h1  class="marque"> Toyota <br> CHR</h1><h1 class="montant">2170000 F</h1>
@@ -47,9 +49,9 @@
       <img src="../../assets/img/Vector (1).svg" height="23px" style="margin-left: 8px;" alt="">
    </div>
     </ion-card-content> 
-  </ion-card>
+  </ion-card> -->
   <!-- 4eme photo -->
-  <ion-card>
+  <!-- <ion-card>
     <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/voiture5.png" />
    <ion-card-content style="background-color: #F6F7F9; height: 100%;">
      <h1  class="marque"> Toyota <br> CHR</h1><h1 class="montant">2170000 F</h1>
@@ -58,7 +60,7 @@
       <img src="../../assets/img/Vector (1).svg" height="23px" style="margin-left: 8px;" alt="">
    </div>
     </ion-card-content> 
-  </ion-card>
+  </ion-card> -->
 </div>
 
 </div>

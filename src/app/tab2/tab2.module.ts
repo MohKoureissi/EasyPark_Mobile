@@ -6,7 +6,6 @@ import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
-import { VenteComponent } from '../vente/vente.component';
 import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.component';
 import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component';
 import { DetailsLocationComponent } from '../details-location/details-location.component';
@@ -21,7 +20,7 @@ import { DetailParkingComponent } from '../detail-parking/detail-parking.compone
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
   ],
-  declarations: [Tab2Page, VenteComponent,
+  declarations: [Tab2Page, 
      DetailVoitureComponent, ModePaiementComponent,
       DetailsLocationComponent,ModePaiementLocationComponent, DetailParkingComponent]
 })

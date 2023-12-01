@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { VoitureService } from '../voiture.service';
+import { Voiture } from '../Model/voiture';
 
 @Component({
   selector: 'app-vente',
@@ -6,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vente.component.scss'],
 })
 export class VenteComponent  implements OnInit {
+  voiture : Voiture[]= []
 
-  constructor() { }
+  constructor(private activatedRoute : ActivatedRoute, private route: Router, private voitureService: VoitureService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.activatedRoute.paramMap.subscribe((value) => {
+      const idAdminParking = value.get("id");
+      this.voitureService.listerVoiture(idAdminParking).subscribe((resultat)=>{
+       this.voiture= resultat;
+      })
+    })
+  }
 
 }

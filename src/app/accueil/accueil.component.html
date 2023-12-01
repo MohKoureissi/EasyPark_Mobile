@@ -13,40 +13,12 @@
 
   <div id="carde" class="animate__animated  animate__bounce">
   <!-- 2eme Card -->
-    <ion-card class="cardIon"   [routerLink]="['../tab2']">
+    <ion-card class="cardIon"   [routerLink]="['../tab1/vente/'+admins.idAdminParking]"  *ngFor="for let admins of admin">
       <div class="divcard">
       <img alt="S" class="imgcard" src="../../assets/img/park-removebg-preview.png" />
     </div>
     <div>
-      <h2  style="font-weight: revert;font-family: ui-monospace; text-align: center;color: rgb(56, 53, 53);">Parking du Sahel</h2>
-    </div>
-    </ion-card>
-   
-    <!--   3eme Card-->
-    <ion-card class="cardIon">
-      <div class="divcard">
-      <img alt="Si" class="imgcard" src="../../assets/img/iconPark-removebg-preview.png"/>
-    </div>
-    <div>
-      <h2  style="font-weight: revert;font-family: ui-monospace; text-align: center;color: rgb(56, 53, 53);">Star Park</h2>
-    </div>
-    </ion-card>
-    <!-- 4eme ligne -->
-    <ion-card class="cardIon">
-      <div class="divcard">
-      <img alt="Si" class="imgcard"  src="../../assets/img/illustration_d-transformed 1.png" />
-    </div>
-    <div>
-      <h2  style="font-weight: revert;font-family: ui-monospace; text-align: center;color: rgb(56, 53, 53);">Parking du Sahel</h2>
-    </div>
-    </ion-card>
-    <!-- 5eme Ligne -->
-    <ion-card class="cardIon">
-      <div class="divcard">
-      <img alt="Si" class="imgcard"  src="../../assets/img/iconPark-removebg-preview.png" />
-    </div>
-    <div>
-      <h2  style="font-weight: revert;font-family: ui-monospace; text-align: center;color: rgb(56, 53, 53);">Parking du Sahel</h2>
+      <h2  style="font-weight: revert;font-family: ui-monospace; text-align: center;color: rgb(56, 53, 53);">{{admins.nomParking}}</h2>
     </div>
     </ion-card>
    
