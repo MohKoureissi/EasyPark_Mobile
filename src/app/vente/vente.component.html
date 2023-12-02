@@ -14,15 +14,15 @@
 
 <div  id="carde" class="animate__animated  animate__bounce" style="margin-top: 14px;">
   <!-- 1ere photo -->
-  <ion-card   [routerLink]="['./detail-voiture']" *ngFor="for let voitures of voiture" >
+  <ion-card   [routerLink]="['./detail-voiture/'+voitures.idVoiture]" *ngFor="for let voitures of voiture" >
     <img [src]="voitures.photo2" class="card-img-top" alt="..." style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;">
 
     <!-- <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/Lux.png" /> -->
    <ion-card-content style="background-color: #F6F7F9; height: 100%;">
-     <h1 class="marque"> {{voitures.marque}} <br> AMG</h1><h1 class="montant">{{voitures.prix}}</h1>
+     <h1 class="marque"> {{voitures.marque}} <br> {{voitures.modele}}</h1><h1 class="montant">{{voitures.prix}} F</h1>
      <div class="achat">
        <h1 style="font-size: 21px;margin-left: -10px;">Acheter</h1>
-       <img src="../../assets/img/Vector.svg" height="23px" style="margin-left: 8px;" alt="">
+       <img src="../../assets/img/Vector.svg" height="23px" style="margin-left: 8px;" alt="...">
     </div>
     </ion-card-content> 
   </ion-card>

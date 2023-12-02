@@ -8,6 +8,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { AccueilComponent } from '../accueil/accueil.component';
 import { VenteComponent } from '../vente/vente.component';
+import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { VenteComponent } from '../vente/vente.component';
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
   ],
-  declarations: [Tab1Page, AccueilComponent,VenteComponent ]
+  declarations: [Tab1Page, AccueilComponent,VenteComponent, DetailVoitureComponent ]
   
 })
 export class Tab1PageModule {}

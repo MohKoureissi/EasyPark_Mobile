@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" >
   <div class="heade" style="display: flex; align-items: center; justify-content: center; background-color:#308D89 ;height: 59px;">
     <div class="ion"> <ion-icon name="arrow-back-sharp" [routerLink]="['../']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -83px;"></ion-icon></div>  
     <div>
@@ -8,9 +8,10 @@
   <div class="slider">
     <img src="../../assets/img/Group 90.png" alt="ggg">
    </div>
-   <div class="marque">
-    <h1 style="font-weight: bolder; margin-left: 4%;font-family: Inter;font-size: xx-large;">Mercedes AMG 360</h1>
-    <h1 style="margin-left: 4%;font-size: xx-large; font-family: Inter;margin-top: -5px;font-weight: bold;color: dimgray;">23 000000 F</h1>
+   <div  class="donner"  *ngIf="voiture">
+   <div class="marque" >
+    <h1 style="font-weight: bolder; margin-left: 4%;font-family: Inter;font-size: xx-large;">{{voiture.marque}} {{voiture.modele}}</h1>
+    <h1 style="margin-left: 4%;font-size: xx-large; font-family: Inter;margin-top: -5px;font-weight: bold;color: dimgray;">{{voiture.prix}} F</h1>
    </div>
    <div style="display: flex; align-items: center; justify-content: center;">
    <div style="width: 97%; height: 54px; flex-shrink: 0;border-radius: 10px; background: #308D89;">
@@ -26,16 +27,17 @@
   <!-- Liste -->
   <div class="liste">
     <div style="display: flex; padding:12px;">
-     <h1>Modèle</h1> <h1 style="align-items: end;margin-left: 35%;font-weight: bold;">AMG 360</h1>
+     <h1>Modèle</h1> <h1 style="align-items: end;margin-left: 35%;font-weight: bold;">{{voiture.modele}}</h1>
     </div>
     <div style="display: flex; padding:12px;">
-     <h1 style="margin-top: -10px;">Année Sortie</h1> <h1 style="font-weight: bold;align-items: end;margin-left: 35%;margin-top: -10px;">2023</h1>
+     <h1 style="margin-top: -10px;">Année Sortie</h1> <h1 style="font-weight: bold;align-items: end;margin-left: 35%;margin-top: -10px;">{{voiture.anneeSortie}}</h1>
     </div>
     <div style="display: flex; padding:12px;">
-     <h1 style="margin-top: -10px;">Puissance</h1> <h1 style="font-weight: bold;align-items: end;margin-left: 35%;margin-top: -10px;">250km/h</h1>
+     <h1 style="margin-top: -10px;">Puissance</h1> <h1 style="font-weight: bold;align-items: end;margin-left: 35%;margin-top: -10px;">{{voiture.puissance}}</h1>
     </div>
   </div>
   <div class="bouton1">
     <button type="submit"   [routerLink]="['../mode-paiement']"> <ion-icon name="cart"></ion-icon> Acheter</button>
   </div>
+</div>
 </div>

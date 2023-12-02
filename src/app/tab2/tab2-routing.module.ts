@@ -14,10 +14,6 @@ const routes: Routes = [
     component: Tab2Page,
   },
   {
-    path: 'detail-voiture',
-    component: DetailVoitureComponent
-  },
-  {
     path:'vente',
     component: VenteComponent
   },
@@ -28,10 +24,6 @@ const routes: Routes = [
   {
     path:'mode-paiement-location',
     component:ModePaiementLocationComponent
-  },
-  {
-    path:'details-location',
-    component:DetailsLocationComponent
   },
   {
     path: 'detail-parking',

@@ -9,6 +9,7 @@ import { Voiture } from '../Model/voiture';
   styleUrls: ['./vente.component.scss'],
 })
 export class VenteComponent  implements OnInit {
+  displayedColumns: string[] = ['marque', 'modele', 'prix', 'photo2'];
   voiture : Voiture[]= []
 
   constructor(private activatedRoute : ActivatedRoute, private route: Router, private voitureService: VoitureService) { }
@@ -21,5 +22,6 @@ export class VenteComponent  implements OnInit {
       })
     })
   }
+ 
 
 }

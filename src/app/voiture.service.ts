@@ -45,7 +45,7 @@ export class VoitureService {
     return this.http.get<any>(`${this.apiUrl}/read`);
   }
 
-  getVoitureById(id: number): Observable<any> {
+  getVoitureById(id: any): Observable<any> {
     return this.http.get(`${this.apiUrl}/read/${id}`);
   }
   deleteVoiture(idVoiture: number): Observable<any> {
