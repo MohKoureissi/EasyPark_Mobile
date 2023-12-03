@@ -21,6 +21,7 @@ import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component'
     FormsModule,
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
+    
   ],
   declarations: [Tab1Page, AccueilComponent,VenteComponent, DetailVoitureComponent,
     ModePaiementComponent,

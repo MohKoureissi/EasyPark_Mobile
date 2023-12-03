@@ -3,9 +3,23 @@
     <img src="../../assets/img/mon-logo.png" alt="no image">
 
   <div>
-  <!-- <app-slider [slides]="slides"></app-slider> -->
+    <ion-content>
+    <!-- <ion-slides [options]="slideOpts">
+      <ion-slide>
+            <img src="../../assets/img/Lux.png" alt="..." />
+      </ion-slide>
+      <ion-slide>
+            <img src="../../assets/img/pickup.jpg" alt=”slide-2” />
+      </ion-slide>
+      <ion-slide>
+            <img src="../../assets/img/isuzu.png" alt=”slide-3” />
+      </ion-slide>
+    </ion-slides> -->
+  </ion-content>
 </div>
+
 <!-- Bar de recherche -->
+
 <div style="display: flex; align-items: center; justify-content: center;">
   <ion-searchbar style="width: 95%;" color="light" placeholder="Rechercher des Parkings"></ion-searchbar>
 </div>
@@ -13,7 +27,7 @@
 
   <div id="carde" class="animate__animated  animate__bounce">
   <!-- 2eme Card -->
-    <ion-card class="cardIon"   [routerLink]="['../tab1/vente/'+admins.idAdminParking]"  *ngFor="for let admins of admin">
+    <ion-card class="cardIon"   [routerLink]="['../tab1/vente/'+admins.idAdminParking]"  *ngFor=" let admins of admin">
       <div class="divcard">
       <img alt="S" class="imgcard" src="../../assets/img/park-removebg-preview.png" />
     </div>

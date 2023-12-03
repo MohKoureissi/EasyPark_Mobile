@@ -1,17 +1,26 @@
 import { Component,Input, OnInit } from '@angular/core';
-import { IonicModule, IonicSlides } from '@ionic/angular';
 import { AdminParking } from '../Model/AdminParking';
 import { AdminParkingService } from '../admin-parking.service';
+import { IonicSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
   styleUrls: ['./accueil.component.scss'],
   //  standalone: true,
-  //  imports: [IonicModule, AccueilComponent],
+    // imports: [IonSlidesModule],
+    
 })
 export class AccueilComponent  implements OnInit {
   
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400,
+    loop: true,
+    autoplay: {
+          delay: 4000
+    }
+  };
   displayedColumns: string[] = ['nomParking'];
   admin:AdminParking[]=[];
 
@@ -23,11 +32,8 @@ export class AccueilComponent  implements OnInit {
     this.adminParking.getAllAdminParking().subscribe(admins=>{
       this.admin = admins.filter((admin: any) => admin.acces=== true);
     });
-    // this.slides=[
-    //   {slider: '../../assets/img/park-removebg-preview.png'},
-    //   {slider: '../../assets/img/park-removebg-preview.png'},
-    //   {slider: '../../assets/img/park-removebg-preview.png'},
-    // ];
+    // swiperModules = [IonicSlides];
+     
    
   }
 }
