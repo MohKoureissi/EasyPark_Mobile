@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { VoitureService } from '../voiture.service';
 import { Voiture } from '../Model/voiture';
+import { AdminParking } from '../Model/AdminParking';
+import { AdminParkingService } from '../admin-parking.service';
 
 @Component({
   selector: 'app-detail-voiture',
@@ -11,13 +13,16 @@ import { Voiture } from '../Model/voiture';
 export class DetailVoitureComponent  implements OnInit {
   displayedColumns: string[] = ['marque', 'modele', 'prix', 'anneeSortie','puissance'];
   voiture: Voiture |any;
-  constructor(private activatedRoute : ActivatedRoute, private route: Router, private voitureService: VoitureService) {
+  admin: AdminParking | any;
+  constructor(private activatedRoute : ActivatedRoute,private adminService: AdminParkingService, private route: Router, private voitureService: VoitureService) {
     this.chargeVoiture();
+    this.chargeAdmin();
    }
 
     ngOnInit() {
       this.voitureService.update$.subscribe(()=>{
         this.chargeVoiture();
+        this.chargeAdmin();
       })
      
     }
@@ -25,6 +30,13 @@ export class DetailVoitureComponent  implements OnInit {
       this.activatedRoute.paramMap.subscribe(params => {
         const idVoiture = params.get('id'); // Convertir l'ID en nombre
         this.voitureService.getVoitureById(idVoiture).subscribe(detailVoiture => this.voiture = detailVoiture);
+        // this.loadClasses(id);
+      });
+    }
+    chargeAdmin(){
+      this.activatedRoute.paramMap.subscribe(params => {
+        const idAdminParking = params.get('id'); // Convertir l'ID en nombre
+        this.adminService.getAdminParkingById(idAdminParking).subscribe(admin => this.admin = admin);
         // this.loadClasses(id);
       });
     }

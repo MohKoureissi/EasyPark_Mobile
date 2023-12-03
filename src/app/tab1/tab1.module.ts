@@ -9,6 +9,10 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { AccueilComponent } from '../accueil/accueil.component';
 import { VenteComponent } from '../vente/vente.component';
 import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.component';
+import { DetailParkingComponent } from '../detail-parking/detail-parking.component';
+import { DetailsLocationComponent } from '../details-location/details-location.component';
+import { ModePaiementLocationComponent } from '../mode-paiement-location/mode-paiement-location.component';
+import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component';
 
 @NgModule({
   imports: [
@@ -18,7 +22,9 @@ import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.compone
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
   ],
-  declarations: [Tab1Page, AccueilComponent,VenteComponent, DetailVoitureComponent ]
+  declarations: [Tab1Page, AccueilComponent,VenteComponent, DetailVoitureComponent,
+    ModePaiementComponent,
+    DetailsLocationComponent,ModePaiementLocationComponent, DetailParkingComponent ]
   
 })
 export class Tab1PageModule {}

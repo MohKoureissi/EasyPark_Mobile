@@ -21,7 +21,7 @@ export class AuthServiceService {
   }
   constructor(private route: Router) {
     // Charger les données du client depuis le localStorage au moment de l'initialisation du service
-    const storedClientId = localStorage.getItem('idClient');
+    const storedClientId = localStorage.getItem('Client');
     if (storedClientId) {
       // Si un ID est stocké, vous pouvez charger les données de l'administrateur ici
       // this.admin1 = this.loadAdminData(storedAdminId);
@@ -32,9 +32,9 @@ export class AuthServiceService {
     this.client1 = client;
     console.log("setClientConnecte", this.client1);
 
-    // Stocker l'id du client connecté dans le localStorage
+    // Stocker l-objet client connecté dans le localStorage
     // localStorage.setItem('idClient', this.client1.idClient.toString());
-    localStorage.setItem('idClient', JSON.stringify(client));
+    localStorage.setItem('Client', JSON.stringify(client));
   }
 
   getAdminConnecte(): Client | undefined {

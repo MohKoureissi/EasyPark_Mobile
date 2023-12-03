@@ -1,6 +1,6 @@
 <div class="Container">
   <div class="heade" style="display: flex; align-items: center; justify-content: center; background-color:#308D89 ;height: 59px;">
-    <div class="ion"> <ion-icon name="arrow-back-sharp"  [routerLink]="['./tab1']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -63px;"></ion-icon></div>  
+    <div class="ion"> <ion-icon name="arrow-back-sharp"  [routerLink]="['../../']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -63px;"></ion-icon></div>  
     <div>
       <h2 style="color: white; font-weight: bold;"  [routerLink]="['./detail-parking']"> Parking su Sahel</h2>
     </div>
@@ -14,7 +14,7 @@
 
 <div  id="carde" class="animate__animated  animate__bounce" style="margin-top: 14px;">
   <!-- 1ere photo -->
-  <ion-card   [routerLink]="['./detail-voiture/'+voitures.idVoiture]" *ngFor="for let voitures of voiture" >
+  <ion-card   [routerLink]="['../../detail-voiture/'+voitures.idVoiture]" *ngFor="for let voitures of voiture" >
     <img [src]="voitures.photo2" class="card-img-top" alt="..." style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;">
 
     <!-- <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/Lux.png" /> -->

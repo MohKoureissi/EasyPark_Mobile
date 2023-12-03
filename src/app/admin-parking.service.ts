@@ -34,7 +34,7 @@ export class AdminParkingService {
     return this.http.get<any>(`${this.baseUrl}/read`);
   }
 
-  getAdminParkingById(id: number): Observable<AdminParking> {
+  getAdminParkingById(id: any): Observable<AdminParking> {
     return this.http.get<AdminParking>(`${this.baseUrl}/read/${id}`);
   }
 
