@@ -5,8 +5,13 @@
       <h2 style="color: white; font-weight: bold;"  [routerLink]="['../detail-parking']"> Parking su Sahel</h2>
     </div>
   </div>
-  <div class="slider">
-    <img src="../../assets/img/Group 90.png" alt="ggg">
+  <div class="slider"  *ngIf="voiture">
+
+    <img [src]="voiture.photo2" width="89%" class="card-img-top" alt="..." style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;margin-left: 5%; height: 205px;">
+    <div style="display: flex;align-items: center;justify-content: center;">
+    <img [src]="voiture.photo4" width="45%" class="card-img-top" alt="..." style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;">
+    <img [src]="voiture.photo3" width="45%" class="card-img-top" alt="..." style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;">
+  </div>
    </div>
    <div  class="donner"  *ngIf="voiture">
    <div class="marque" >

@@ -1,4 +1,4 @@
-<div class="Container">
+<div class="Container" style="height: 68%;">
   <div class="heade" style="display: flex; align-items: center; justify-content: center; background-color:#308D89 ;height: 59px;">
     <div class="ion"> <ion-icon name="arrow-back-sharp"  [routerLink]="['../../']" style="color: white; font-weight: bold;width: 25px;height: 25px;margin-left: -63px;"></ion-icon></div>  
     <div>
@@ -11,7 +11,8 @@
   <div style="display: flex; align-items: center; justify-content: center;border-radius: 13px; margin-top: 21px;">
     <ion-searchbar style="width: 94% ;height: 10px !important; border-radius: 13px;" color="light" placeholder="Rechercher des véhicules"></ion-searchbar>
   </div>
-
+<ion-content>
+  
 <div  id="carde" class="animate__animated  animate__bounce" style="margin-top: 14px;">
   <!-- 1ere photo -->
   <ion-card   [routerLink]="['../../detail-voiture/'+voitures.idVoiture]" *ngFor="for let voitures of voiture" >
@@ -27,41 +28,8 @@
     </ion-card-content> 
   </ion-card>
 
-  <!-- 2eme photo -->
-  <!-- <ion-card   [routerLink]="['./details-location']">
-    <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/bmw-removebg-preview.png" />
-   <ion-card-content style="background-color: #F6F7F9; height: 100%;">
-     <h1  class="marque"> Toyota <br> CHR</h1><h1 class="montant">2170000 F</h1>
-     <div class="achat">
-      <h2 style="font-size: 21px;margin-left: -10px;">Louer</h2>
-      <img src="../../assets/img/Vector (1).svg" height="23px" style="margin-left: 8px;" alt="">
-   </div>
-    </ion-card-content> 
-  </ion-card> -->
-  <!-- 3eme photo -->
-
-  <!-- <ion-card>
-    <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/isuzu.png" />
-   <ion-card-content style="background-color: #F6F7F9; height: 100%;">
-     <h1  class="marque"> Toyota <br> CHR</h1><h1 class="montant">2170000 F</h1>
-     <div class="achat">
-      <h2 style="font-size: 21px;margin-left: -10px;">Louer</h2>
-      <img src="../../assets/img/Vector (1).svg" height="23px" style="margin-left: 8px;" alt="">
-   </div>
-    </ion-card-content> 
-  </ion-card> -->
-  <!-- 4eme photo -->
-  <!-- <ion-card>
-    <img alt="Silhouette of mountains" style="background-color: #E0E0E0;border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; height: 115px;" src="../../assets/img/voiture5.png" />
-   <ion-card-content style="background-color: #F6F7F9; height: 100%;">
-     <h1  class="marque"> Toyota <br> CHR</h1><h1 class="montant">2170000 F</h1>
-     <div class="achat">
-      <h2 style="font-size: 21px;margin-left: -10px;">Louer</h2>
-      <img src="../../assets/img/Vector (1).svg" height="23px" style="margin-left: 8px;" alt="">
-   </div>
-    </ion-card-content> 
-  </ion-card> -->
 </div>
+</ion-content>
 
 </div>
 

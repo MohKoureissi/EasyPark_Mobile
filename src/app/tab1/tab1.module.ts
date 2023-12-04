@@ -9,7 +9,6 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { AccueilComponent } from '../accueil/accueil.component';
 import { VenteComponent } from '../vente/vente.component';
 import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.component';
-import { DetailParkingComponent } from '../detail-parking/detail-parking.component';
 import { DetailsLocationComponent } from '../details-location/details-location.component';
 import { ModePaiementLocationComponent } from '../mode-paiement-location/mode-paiement-location.component';
 import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component';
@@ -25,7 +24,7 @@ import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component'
   ],
   declarations: [Tab1Page, AccueilComponent,VenteComponent, DetailVoitureComponent,
     ModePaiementComponent,
-    DetailsLocationComponent,ModePaiementLocationComponent, DetailParkingComponent ]
+    DetailsLocationComponent,ModePaiementLocationComponent ]
   
 })
 export class Tab1PageModule {}
