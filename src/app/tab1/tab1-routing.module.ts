@@ -7,6 +7,7 @@ import { DetailVoitureComponent } from '../detail-voiture/detail-voiture.compone
 import { DetailParkingComponent } from '../detail-parking/detail-parking.component';
 import { ModePaiementLocationComponent } from '../mode-paiement-location/mode-paiement-location.component';
 import { ModePaiementComponent } from '../mode-paiement/mode-paiement.component';
+import { DetailsLocationComponent } from '../details-location/details-location.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,9 @@ const routes: Routes = [
   {
     path: 'detail-parking',
     component: DetailParkingComponent
+  },
+  {
+    path: 'details-location', component: DetailsLocationComponent
   }
 ];
 
